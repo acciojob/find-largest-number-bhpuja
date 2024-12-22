@@ -1,16 +1,30 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Largest Number</title>
+  <script>
+    function findLargest(a, b, c) {
+      if (a >= b && a >= c) {
+        return a;
+      } else if (b >= a && b >= c) {
+        return b;
+      } else {
+        return c;
+      }
+    }
+
+    // Test the function with examples
+    console.log(findLargest(100, 200, 50));   // Output: 200
+    console.log(findLargest(-100, -200, -50)); // Output: -50
+    console.log(findLargest(-100, 200, 50));   // Output: 200
+    console.log(findLargest(0, 0, 0));         // Output: 0
+  </script>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <h1>Find Largest Number</h1>
+  <p>Open the console to see the results of the test cases.</p>
 </body>
-
 </html>
+
